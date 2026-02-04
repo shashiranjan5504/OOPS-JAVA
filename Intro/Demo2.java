@@ -25,7 +25,7 @@ class mainClass2 {
          Demo1.x = 500;
          Demo1.y = 1000;
 
-           System.out.println("x value is " + Demo1.x);
+        System.out.println("x value is " + Demo1.x);
          System.out.println("y value is " + Demo1.y);
 
         

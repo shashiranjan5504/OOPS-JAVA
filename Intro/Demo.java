@@ -9,6 +9,8 @@ class Demo {
 
     void m2() {
         int b = 20;//local variable 
+       
+           
     }
 }
 

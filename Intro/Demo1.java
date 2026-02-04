@@ -1,8 +1,8 @@
 class Demo1 {
 
     //static member  variable 
-    static int x = 100;
-    static int y = 200;
+     static int x = 100;
+     static int y = 200;
 
 }
 
