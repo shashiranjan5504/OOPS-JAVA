@@ -25,8 +25,8 @@ class mainClass8{
 
             Demo8 d2 = null;
 
-            // example of null pointer exception it is   run time error  
-           // System.out.println(d2.x);
+            //example of null pointer exception it is   run time error  
+            System.out.println(d2.x);
 
 
 

@@ -2,7 +2,11 @@
 
 1.identify entity
 2.identify attruibute 
-3. */
+3.identify behaviour  
+4.define class 
+-use insatnce variables for attributes 
+-use instance methods for behaviours  
+ */
 
 class Pen {
     
