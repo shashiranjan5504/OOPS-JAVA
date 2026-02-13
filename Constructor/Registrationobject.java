@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 class Registration {
 
+    //instance variables or states or fields or data members
+
     String username;
     String email;
     long phoneNumber;
     String password;
 
+
+    //calling user defined paramaterized parameter
     Registration(String u, String e, long p, String pass) {
         System.out.println("-----------Username Details------------- ");
         username = u;
