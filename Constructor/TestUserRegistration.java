@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/* import java.util.Scanner;
 class TestUserRegistration {
     public static void main(String[] args) {
         System.out.println("main method started ");
@@ -58,8 +58,69 @@ class TestUserRegistration {
         System.out.println("main method ended");
 
     }
-}
+} */
 //to run this program there is two option 
 //1.  compile the other classes separately which is used in this class and then compile this classs also then run the  main method
 //2. directly compile and run  this  class which is containing the main method ,so it will automatically compile other classes as the classes name comes to jvm.then no need to compile other classes. 
 
+//second method  with initialising common variable outside the  switch case statement
+ 
+import java.util.Scanner;
+
+class TestUserRegistration {
+    public static void main(String[] args) {
+        System.out.println("main method started ");
+
+        System.out.println("Enter 1 or  2 or 3  \n");
+        Scanner scan = new Scanner(System.in);
+        int choice = scan.nextInt();
+
+        System.out.println("enter the value of  usernsame ");
+        String username = scan.next();
+        
+        System.out.println("enter the value of  password ");
+        String password = scan.next();
+        UserRegistration user = null;
+
+
+        switch (choice) {
+            case 1:
+                
+                System.out.println("enter the value of  emailid  ");
+                String emailId = scan.next();
+                System.out.println("enter the value of  phone num ");
+                long phonenum = scan.nextLong();
+                
+                user= new UserRegistration(username, emailId, phonenum, password);
+                user.details();
+
+                break;
+            case 2:
+                
+                System.out.println("enter the value of  emailid  ");
+                String emailId2 = scan.next();
+
+               
+                user=  new UserRegistration( username ,emailId2,password);
+                user.details();
+                break;
+            case 3:
+               
+                System.out.println("enter the value of  phonenumber ");
+
+                long phonenum3 = scan.nextLong();
+               
+                user = new UserRegistration(username, phonenum3, password);
+                user.details();
+                break;
+
+            default:
+                System.out.println("your input is incorrect");
+        }
+
+        System.out.println("main method ended");
+
+        scan.close();
+
+    }
+}
