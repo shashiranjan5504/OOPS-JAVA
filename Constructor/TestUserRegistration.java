@@ -64,7 +64,7 @@ class TestUserRegistration {
 //2. directly compile and run  this  class which is containing the main method ,so it will automatically compile other classes as the classes name comes to jvm.then no need to compile other classes. 
 
 //second method  with initialising common variable outside the  switch case statement
- 
+
 import java.util.Scanner;
 
 class TestUserRegistration {
@@ -75,7 +75,7 @@ class TestUserRegistration {
         Scanner scan = new Scanner(System.in);
         int choice = scan.nextInt();
 
-        System.out.println("enter the value of  usernsame ");
+        System.out.println("enter the value of  username ");
         String username = scan.next();
         
         System.out.println("enter the value of  password ");

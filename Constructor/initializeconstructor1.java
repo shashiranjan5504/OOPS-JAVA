@@ -9,7 +9,7 @@ class Demo2 {
     //instance variable 
     int x;
     double y;
-
+    // user defined constuctor with no parameter 
     Demo2() {
         System.out.println("Running Demo2 class constructor");
         x = 10;
